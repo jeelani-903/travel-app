@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>booking page</title>
+    <script>
+        function submit(){
+            document.getElementById("frm1")
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="forms-1">
+            <label for="from">FROM</label>
+            <input type="text" id="place-from">
+    <div class="forms-2">
+        <label for="TO">TO</label>
+        <input type="text" id="place-to">
+        <input type="button" onclick="location.href='/flight';" value="search" />
+        </div>
+           <div class="date">
+                <input type="date" id="start" name="trip-start"
+                value="2021-07-22"
+                min="2021-01-01" max="2023-12-31">
+           </div>
+        </div>
+    </div>
+    <style>
+        #place-from {
+            padding: 10px;
+        }
+        #place-to {
+            padding: 10px;
+        }
+        .date {
+            position: absolute;
+            top: 150px;
+        }
+        .container {
+            border-radius: 30px;
+            height: 500px;
+            width: 500px;
+            margin: 100px 450px; 
+            background: powderblue ;
+
+        }
+        .forms-1 {
+            position: absolute;
+            top: 250px;
+            left: 600px;
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</body>
+</html>
