@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>booking page</title>
+    <script>
+        function submit(){
+            document.getElementById("frm1")
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="forms-1">
+            <label for="from">FROM</label>
+            <input class="dropdown" type="text" id="place-from">
+        <div class="forms-2">
+            <label for="TO">TO</label>
+            <input type="text" id="place-to">
+        </div>
+            <div class="date">
+               <label for="DATE">DATE</label>
+               <input type="date" id="start" name="trip-start"
+                value="2021-07-22"
+                min="2021-01-01" max="2022-12-31">
+            </div>
+        </div>
+    </div>
+
+    <div class="container1">
+       
+        <p>
+            DEPARTURE
+        </p>
+        <p class="arrival">
+            ARRIVAL
+        </p>
+        <p class="timing">
+            23:18  
+         </p>
+         <p class="timing1">
+            08:05 
+         </p>
+         <p class="arrow">
+            9h 02m 
+         </p>
+         <p class="price">
+            ₹ 7,420
+        </p>
+        <input type="button" class="button" onclick="location.href='/credentials';" value="BOOK" />
+        <h3>
+            <img src={{url_for('static', filename = 'images/spicejet.png')}} >
+        </h3>
+    </div>
+    <div class="container2">
+        <p>
+            DEPARTURE
+        </p>
+        <p class="arrival">
+            ARRIVAL
+        </p>
+        <p class="timing">
+           06:00 
+        </p>
+        <p class="timing1">
+            21:10 
+         </p>
+         <p class="arrow">
+            15h 10m
+         </p>
+         <p class="price">
+            ₹ 7,420
+        </p>
+        <h4>
+            <img src={{url_for('static', filename = 'images/indigo.png')}} >
+        </h4>
+        <input type="button" class="button" onclick="location.href='/credentials';" value="BOOK" />
+    </div>
+    <div class="container3">
+        <p>
+            DEPARTURE
+        </p>
+        <p class="arrival">
+            ARRIVAL
+        </p>
+        <p class="timing">
+            19:05 
+         </p>
+         <p class="timing1">
+            08:15 
+         </p>
+        <p class="arrow">
+           13h 20m
+        </p>
+        <p class="price">
+            ₹ 7,550
+        </p>
+        <input type="button" class="button" onclick="location.href='/credentials';" value="BOOK" />
+
+        <h5 class="airways">
+            <img src={{url_for('static', filename = 'images/airways.png')}} >
+        </h5>
+    </div>
+    <style>
+        body {
+            background-color: #614385;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #516395, #614385);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #516395, #614385); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+        }
+        .forms-2 {
+            position: relative;
+            height: 30px;
+            bottom:20px;
+            left: 230px;
+        }
+        .button {
+            border-radius:10px;
+            font-size: 30px;
+            position: absolute;
+            right: 85px;
+            top: 40px;
+            background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%);
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+        }
+        input {
+            width: 10%;
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 3px;
+            font-size: 20px;
+        }
+        .forms-2 {
+            position: relative;
+            height: 30px;
+            bottom:60px;
+            left: 300px;
+            font-size: 20px;
+        }
+        h4 {
+            position: relative;
+            bottom: 300px;
+        }
+        
+        .arrival {
+            position: absolute;
+            left: 55%;
+            top: 0px;
+            color: azure;
+        }
+
+        .timing1 {
+            bottom: 89px;
+            left: 23%;
+            color: azure;
+        }
+        .price {
+            position: absolute;
+            right: 130px;
+            top: 90px;
+            color: azure;
+
+        }
+
+        .book-btn {
+            position: absolute;
+            left: 87%;
+            bottom: 90px;
+            font-size: 40px;
+            border-radius: 10px;
+        }
+
+        h3 {
+            width: 200px;
+            height: 40px;
+            position: absolute;
+            top: 25px;
+
+        }
+        .arrow {
+            position: relative;
+            left: 130px;
+            bottom: 100%;
+            font-size: 30px;
+            color: azure;
+          }
+
+        p {
+            font-size:40px ;
+            position: relative;
+            text-align: center;
+            right: 10%; 
+            color: azure;
+        }
+         
+        .airways {
+            position: absolute;
+            top: 30px; 
+        }
+
+        .date {
+           position: relative;
+           bottom: 10px;
+        }
+        .container {
+            padding: 15px;
+            background-color: #006994;
+        }
+        .container1 {
+            border-style: solid;
+            border-radius: 20px;
+            position: relative;
+            top: 90px;
+            height: 200px;
+        }
+        .container2 {
+            border-style: solid;
+            border-radius: 20px;
+            position: relative;
+            top: 130px;
+            height: 200px;
+        }
+        .container3 {
+            border-style: solid;
+            border-radius: 20px;
+            position: relative;
+            top: 160px;
+            height: 200px;
+            
+        }
+        
+    </style>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>booking page</title>
+    <script>
+        function submit(){
+            document.getElementById("frm1")
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="forms-1">
+            <label for="from">FROM</label>
+            <input class="dropdown" type="text" id="place-from">
+        <div class="forms-2">
+            <label for="TO">TO</label>
+            <input type="text" id="place-to">
+        </div>
+            <div class="date">
+               <label for="DATE">DATE</label>
+               <input type="button" class="button" onclick="location.href='/flight';" value="search" />
+               <input type="date" id="start" name="trip-start"
+                value="2021-07-22"
+                min="2021-01-01" max="2022-12-31">
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <img src={{url_for('static', filename = 'images/banner2.jpg')}} >
+    <style>
+
+        img{
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            padding-top: 10px;
+            
+        }
+        .forms-2 {
+            position: relative;
+            height: 30px;
+            bottom:60px;
+            left: 300px;
+            font-size: 20px;
+        }
+         
+         input {
+            width: 10%;
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 3px;
+            font-size: 20px;
+}
+        .button {
+            font-size: 40px;
+             position: relative;
+             left: 600px;
+             top: 0px;
+             border-radius: 20px;
+        }
+        .date {
+           position: relative;
+           bottom: 10px;
+        }
+        .container {
+            padding: 15px;
+            background-color: #006994;
+        }
+    </style>
+</body>
+</html>
