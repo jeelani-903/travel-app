@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CtoK</title>
+</head>
+<body>
+    <img src={{url_for('static', filename = 'images/trip4.jpg')}} > 
+        <h1>
+            Tripoco
+      </h1>
+      <div class="home-btn">
+        <p>
+          <a class="button" href="/home" type="hidden">HOME</a>
+        </p>
+    </div>
+    <div class="aboutus-btn">
+      <p>
+        <a class="button" href="/about" type="hidden">ABOUT US</a>
+      </p>
+    </div>
+    <div class="review-btn">
+    <p>
+      <a class="button" href="/review" type="hidden">FEEDBACK</a>
+    </p>
+    </div>
+    <div class="logout-btn">
+      <p>
+        <a class="button" href="/" type="hidden">LOGOUT</a>
+      </p>
+      <div class="container">
+        <div class="forms-1">
+            <label " for="from">FROM</label>
+            <input class="dropdown" type="text" id="place-from">
+        <div class="forms-2">
+            <label for="TO">TO</label>
+            <input type="text" id="place-to">
+        </div>
+            <div class="date">
+               <label for="DATE">DATE</label>
+               <input type="date" id="start" name="trip-start"
+                value="2021-07-22"
+                min="2021-01-01" max="2022-12-31">
+             </div>
+        </div>
+
+    </div>
+</div>
+<p class="mind">
+    <a class="button" href="/book" type="hidden">Search Again</a>
+ </p>
+  
+  <div class="container1">
+    <p class="departure">
+        DEPARTURE
+    </p>
+    <p class="arrival">
+        ARRIVAL
+    </p>
+    <p class="timing">
+        08:45  
+     </p>
+     <p class="timing1">
+        17:25 
+     </p>
+     <p class="arrow">
+        8h 40m 
+     </p>
+     <p class="price">
+        ₹ 5,040
+    </p>
+    <h3>
+        <img src={{url_for('static', filename = 'images/spicejet.png')}} >
+    </h3>
+    <p class="book"> 
+        <a class="button" href="/form" type="hidden">Book</a>
+    </p>
+    
+</div>
+<div class="container2">
+    <p class="departure1">
+        DEPARTURE
+    </p>
+    <p class="arrival">
+        ARRIVAL
+    </p>
+    <p class="timing">
+       10:35 
+    </p>
+    <p class="timing1">
+        17:25 
+     </p>
+     <p class="arrow">
+        8h 40m
+     </p>
+     <p class="price">
+        ₹ 6,500
+    </p>
+    <h4>
+        <img src={{url_for('static', filename = 'images/indigo.png')}} >
+    </h4>
+    <p class="book1"> 
+        <a class="button" href="/form" type="hidden">Book</a>
+    </p>
+</div>
+<div class="container3">
+    <p class="departure2">
+        DEPARTURE
+    </p>
+    <p class="arrival">
+        ARRIVAL
+    </p>
+    <p class="timing">
+        16:40
+     </p>
+     <p class="timing1">
+        1:10 
+     </p>
+    <p class="arrow">
+       8h 30m
+    </p>
+    <p class="price">
+        ₹ 6,000
+    </p>
+
+    <h5 class="airways">
+        <img src={{url_for('static', filename = 'images/airways.png')}} >
+    </h5>
+
+    <p class="book2"> 
+        <a class="button" href="/form" type="hidden">Book</a>
+    </p>
+</div>
+<div class="container4">
+    <p class="departure3">
+        DEPARTURE
+    </p>
+    <p class="arrival">
+        ARRIVAL
+    </p>
+    <p class="timing">
+        21:20 
+     </p>
+     <p class="timing1">
+        05:20 
+     </p>
+    <p class="arrow">
+       8h 00m
+    </p>
+    <p class="price">
+        ₹ 7,000
+    </p>
+
+    <p class="book3"> 
+        <a class="button" href="/form" type="hidden">Book</a>
+    </p>
+</div>
+<div class="container5">
+    <p class="departure4">
+        DEPARTURE
+    </p>
+    <p class="arrival">
+        ARRIVAL
+    </p>
+    <p class="timing">
+        19:00 
+     </p>
+     <p class="timing1">
+        03:00 
+     </p>
+    <p class="arrow">
+       8h 00m
+    </p>
+    <p class="price">
+        ₹ 7,200
+    </p>
+
+    <p class="book4"> 
+        <a class="button" href="/form" type="hidden">Book</a>
+    </p>
+</div>
+<div class="container6">
+    <p class="departure5">
+        DEPARTURE
+    </p>
+    <p class="arrival">
+        ARRIVAL
+    </p>
+    <p class="timing">
+        18:00 
+     </p>
+     <p class="timing1">
+        02:40 
+     </p>
+    <p class="arrow">
+       8h 40m
+    </p>
+    <p class="price">
+        ₹ 8,000
+    </p>
+
+    <p class="book5"> 
+        <a class="button" href="/form" type="hidden">Book</a>
+    </p>
+</div>
+      <style>
+          .mind {
+              position: absolute;
+              top: 12rem;
+              left: 40%;
+          }
+          .container1 {
+            border-style: solid;
+            border-radius: 20px;
+            position: relative;
+            top: 250px;
+            height: 200px;
+        }
+        .container2 {
+            border-style: solid;
+            border-radius: 20px;
+            position: relative;
+            top: 300px;
+            height: 200px;
+        }
+        .container3 {
+            border-style: solid;
+            border-radius: 20px;
+            position: relative;
+            top: 350px;
+            height: 200px;
+        }
+        .container4 {
+            border-style: solid;
+            border-radius: 20px;
+            position: relative;
+            top: 400px;
+            height: 200px;
+        }
+        .container5 {
+            border-style: solid;
+            border-radius: 20px;
+            position: relative;
+            top: 450px;
+            height: 200px;
+        }
+        .container6 {
+            border-style: solid;
+            border-radius: 20px;
+            position: relative;
+            top: 500px;
+            height: 200px;
+        }
+        .container7 {
+            border-style: solid;
+            border-radius: 20px;
+            position: relative;
+            top: 550px;
+            height: 200px;
+        }
+        .container8 {
+            border-style: solid;
+            border-radius: 20px;
+            position: relative;
+            top: 600px;
+            height: 200px;
+        }
+        .container9 {
+            border-style: solid;
+            border-radius: 20px;
+            position: relative;
+            top: 650px;
+            height: 200px;
+        }
+        p {
+            font-size:40px ;
+            position: relative;
+            text-align: center;
+            color: black;
+        }
+        h3 {
+            position: relative;
+            bottom: 350px;
+            left: -30px;
+        }
+        h4 {
+            position: relative;
+            bottom: 350px;
+            left:-30px;
+        }
+        h5 {
+            position: relative;
+            bottom: 330px;
+            left:-30px;
+        }
+        h6 {
+            position: relative;
+            bottom: 390px;
+            left:-30px;
+        }
+        .departure {
+            position: relative;
+            left: -10%;
+        }
+        .departure1 {
+            position: relative;
+            left: -10%;
+        }
+        .departure2 {
+            position: relative;
+            left: -10%;
+        }
+        .departure3 {
+            position: relative;
+            left: -10%;
+        }
+        .departure4 {
+            position: relative;
+            left: -10%;
+        }
+        .departure5 {
+            position: relative;
+            left: -10%;
+        }
+        .departure6 {
+            position: relative;
+            left: -10%;
+        }
+        .departure7 {
+            position: relative;
+            left: -10%;
+        }
+        .departure8 {
+            position: relative;
+            left: -10%;
+        }
+        .arrival {
+            position: absolute;
+            left: 69%;
+            top: 0px;
+            color: black;
+        }
+        .book {
+            position: relative;
+            bottom: 270%;
+            left: 85%;
+        }
+        .book1 {
+            position: relative;
+            bottom: 270%;
+            left: 85%;
+        }
+        .book2 {
+            position: relative;
+            bottom: 250%;
+            left: 85%;
+        }
+        .book3 {
+            position: relative;
+            bottom: 160%;
+            left: 85%;
+        }
+        .book4 {
+            position: relative;
+            bottom: 160%;
+            left: 85%;
+        }
+        .book5 {
+            position: relative;
+            bottom: 160%;
+            left: 85%;
+        }
+        .book6 {
+            position: relative;
+            bottom: 160%;
+            left: 85%;
+        }
+        .book7 {
+            position: relative;
+            bottom: 160%;
+            left: 85%;
+        }
+        .book8 {
+            position: relative;
+            bottom: 160%;
+            left: 85%;
+        }
+        .timing {
+            position: relative;
+            left: -10%;
+        }
+        .timing1 {
+            bottom: 89px;
+            left: 23%;
+            color: black;
+        }
+        .arrow {
+            position: relative;
+            left: 130px;
+            bottom: 100%;
+            font-size: 30px;
+            color: black;
+          }
+          .price {
+            position: absolute;
+            right: 130px;
+            top: 80px;
+            color: black;
+        }
+        
+
+          .forms-1 {
+              text-align: initial;
+          }
+           .forms-2 {
+               text-align: initial;
+            position: relative;
+            left: 300px;
+            top: -46px;
+            height: 30px;
+            font-size: 20px;
+           }
+           input{
+               height: 40px;
+               width: 200px;
+               font-size: 20px;
+           }
+           
+           .container {
+            padding: 15px;
+            background: #360033; /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #0b8793, #360033); /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            position: absolute;
+            top: 130px;
+            right: -300px;
+            width: 1900px;
+            height: 200px;
+
+        }
+
+        .date {
+           position: relative;
+           bottom: -30px;
+        }
+          body {
+              font-family: sans-serif;
+          }
+          .home-btn {
+      position: absolute;
+      text-align: right;
+      left: 40%;
+      top: 50px;
+      font-size: 20px;
+    }
+    h1 {
+       padding: 30px;
+       position: absolute;
+       top: 20px;
+       left: 140px;
+       font-family: sans-serif;
+       font-weight: 400;
+       font-size: 40px;
+     }
+     img {
+       padding: 30px;
+     }
+    .logout-btn {
+
+     position: absolute;
+      text-align: right;
+      top: 50px;
+      left: 85%;
+      font-size: 20px;
+    }
+    .aboutus-btn {
+      position: absolute;
+      text-align: right;
+      top: 50px;
+      left: 55%;
+      font-size: 20px;
+    }
+    .review-btn {
+      position: absolute;
+      text-align: right;
+      width: auto;
+      top: 50px;
+      left: 70%;
+      font-size: 20px;
+    }
+
+    .home-btn {cursor: pointer;}
+    .aboutus-btn {cursor: pointer;}
+    .review-btn {cursor: pointer;}
+    .logout-btn {cursor: pointer;}
+
+    .button {
+        background-color: #4d5dfb;
+        background-image: linear-gradient(315deg, #4d5dfb 0%, #08c8f6 74%);
+        font-size: 20px;
+        top: -20px;
+          position: absolute;
+          text-decoration: none;
+          width: 110px;
+          padding: 15px 45px;
+          text-align: center;
+          text-transform: uppercase;
+          transition: 0.5s;
+          background-size: 200% auto;
+          color: white;            
+          box-shadow: 0 0 20px #eee;
+          border-radius: 10px;
+          display: block;
+    }
+
+    .button:hover {
+      background-position: right center; /* change the direction of the change here */
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    </style>
+</body>
+</html>
+</body>
+</html>

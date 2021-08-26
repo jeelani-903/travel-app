@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: 'Times New Roman', Times, serif;
+background: #085078;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 22px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #982eab;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #b456c4;
+}
+
+.container {
+  border-radius: 5px;
+  
+  background: #085078;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  padding: 20px;
+}
+
+.button{
+    background-color: #982eab;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+label {
+  font-size: 22px;
+}
+
+.submit{background-color: #a52790;} 
+</style>
+</head>
+<body>
+<h1 style="text-align:center;">Tripoco </h1>
+<h2 style="text-align:center;">Additional Passengers' Details</h2>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name (Passenger 1)</label>
+    <input type="text" id="fname" name="firstname" required placeholder="Enter First Name">
+    <label for="lname">Last Name (Passenger 1)</label>
+    <input type="text" id="lname" name="lastname" required placeholder="Enter Last Name">
+    <label for="birthday">Date of birth</label><br><br>
+    <input type="date" id="birthday" name="birthday"><br><br>
+    <label for="fname">Mobile</label>
+    <input type="text" id="Mobile" name="Mobile" required placeholder="Enter Mobile">
+    
+
+    <label for="fname">First Name (Passenger 2)</label>
+    <input type="text" id="fname" name="firstname" required placeholder="Enter First Name">
+    <label for="lname">Last Name (Passenger 2)</label>
+    <input type="text" id="lname" name="lastname" required placeholder="Enter Last Name">
+    <label for="birthday">Date of birth</label><br><br>
+    <input type="date" id="birthday" name="birthday"><br><br>
+    <label for="fname">Mobile</label>
+    <input type="text" id="Mobile" name="Mobile" required placeholder="Enter Mobile">
+    
+
+    <label for="fname">First Name (Passenger 3)</label>
+    <input type="text" id="fname" name="firstname" required placeholder="Enter First Name">
+    <label for="lname">Last Name (Passenger 3)</label>
+    <input type="text" id="lname" name="lastname" required placeholder="Enter Last Name">
+    <label for="birthday">Date of birth</label><br><br>
+    <input type="date" id="birthday" name="birthday"><br><br>
+    <label for="fname">Mobile</label>
+    <input type="text" id="Mobile" name="Mobile" required placeholder="Enter Mobile">
+    
+
+    <label for="fname">First Name (Passenger 4)</label>
+    <input type="text" id="fname" name="firstname" required placeholder="Enter First Name">
+    <label for="lname">Last Name (Passenger 4)</label>
+    <input type="text" id="lname" name="lastname" required placeholder="Enter Last Name">
+    <label for="birthday">Date of birth</label><br>
+    <input type="date" id="birthday" name="birthday"><br><br>
+   
+    <label for="fname">Mobile</label>
+    <input type="text" id="Mobile" name="Mobile" required placeholder="Enter Mobile">
+    
+
+    <label for="fname">First Name (Passenger 5)</label>
+    <input type="text" id="fname" name="firstname" required placeholder="Enter First Name">
+    <label for="lname">Last Name (Passenger 5)</label>
+    <input type="text" id="lname" name="lastname" required placeholder="Enter Last Name">
+    <label for="birthday">Date of birth</label><br>
+    <input type="date" id="birthday" name="birthday"><br><br>
+   
+    <label for="fname">Mobile</label>
+    <input type="text" id="Mobile" name="Mobile" required placeholder="Enter Mobile">
+    <label for="fname">E-mail</label>
+    <input type="text" id="email" name="email" required placeholder="Enter E-mail">
+    <br>
+    <br>
+    
+    
+
+    <a class="button" href="/terms" type="hidden">Proceed to payment</a>
+
+  </form>
+</div>
+
+</body>
+</html>

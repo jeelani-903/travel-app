@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>home page</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <h1>
+      <img src={{url_for('static', filename = 'images/trip4.jpg')}} >
+      <b>Tripoco</b> 
+    </h1>
+    <h4 class="booking">
+      <a class="button1" href="/book" type="hidden"><span>Book  Flights</span></a>
+    </h4>
+  </div>
+  <div class="home-btn">
+      <p>
+        <a class="button" href="/home" type="hidden">HOME</a>
+      </p>
+  </div>
+  <div class="aboutus-btn">
+    <p>
+      <a class="button" href="/about" type="hidden">ABOUT US</a>
+    </p>
+  </div>
+  <div class="review-btn">
+  <p>
+    <a class="button" href="/review" type="hidden">FEEDBACK</a>
+  </p>
+  </div>
+  <div class="logout-btn">
+    <p>
+      <a class="button" href="/" type="hidden">LOGOUT</a>
+    </p>
+    </div>
+      <img src={{url_for('static', filename = 'images/trial.jpg')}} >
+      <p class="quote">
+        “We take photos as a <br> <span class="quote1">return ticket to a <br> moment otherwise gone”</span>
+      </p>
+      <p class="explore">
+        Want To Explore More Destinations ? 
+      </p>
+    <section class="col-md-4">
+      <h1 class="destination">
+        Featured destinations
+      </h1>
+      <div class="container1">
+        <div class="row">
+        <div class="col-md-4">
+        <div class="feature-box">
+          <div class="feature-img">
+            <h3 class="title">Mumbai</h3>
+            <img src={{url_for('static', filename = 'images/gateway.jpg')}}>
+          </div>
+        </div>
+        <div class="price">
+          ₹ 15,000 <br>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <div class="book">
+            <p>
+              <a class="button" href="/book" type="hidden">BOOK NOW</a>
+            </p>
+        </div>
+        </div>
+          <div class="feature-img1">
+            <h3 class="title1">Hyderabad</h3>
+            <img src={{url_for('static', filename = 'images/charminar.jpg')}}>
+          </div>
+          <div class="price1">
+            ₹ 8,000 <br>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star-half-full checked"></span>
+            <span class="fa fa-star"></span>
+            <div class="book1">
+              <p>
+                <a class="button" href="/book" type="hidden">BOOK NOW</a>
+              </p>
+          </div>
+          </div>
+          <div class="feature-img2">
+            <h3 class="title2">Delhi</h3>
+            <img src={{url_for('static', filename = 'images/taj mahal.jpg')}}>
+          </div>
+          <div class="price2">
+            ₹ 7,500 <br>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <div class="book2">
+              <p>
+                <a class="button" href="/book" type="hidden">BOOK NOW</a>
+              </p>
+              <div class="feature-img3">
+                <h3 class="title3">Goa</h3>
+                <img src={{url_for('static', filename = 'images/goa.jpg')}}>
+              </div>
+              <div class="price3">
+                ₹ 7,500 <br>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star-half-full checked"></span>
+              </div>
+                <div class="book3">
+                  <p class="bookg">
+                    <a class="button" href="/book" type="hidden">BOOK NOW</a>
+                  </p>
+              
+                  
+                  <div class="feature-img4">
+                    <h3 class="title4">Banglore</h3>
+                    <img src={{url_for('static', filename = 'images/bang.jpg')}}>
+                  </div>
+                  <div class="price4">
+                    ₹ 7,500 <br>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked "></span>
+                    <span class="fa fa-star"></span>
+                  </div>
+                    
+                    <div class="book4">
+                      <p>
+                        <a class="button" href="/book" type="hidden">BOOK NOW</a>
+                      </p>
+                    </div>
+
+                    <div class="feature-img5">
+                      <h3 class="title5">Kolkata</h3>
+                      <img src={{url_for('static', filename = 'images/kolk.jpg')}}>
+                    </div>
+                    <div class="price5">
+                      ₹ 7,500 <br>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star-half-full checked"></span>
+                      <span class="fa fa-star "></span>
+                    </div>
+                      
+                      <div class="book5">
+                        <p>
+                          <a class="button" href="/book" type="hidden">BOOK NOW</a>
+                        </p>
+                      </div>
+                      
+    </section>
+    <style>
+     h1 {
+       padding: 30px;
+       font-weight: 400;
+     }
+     .checked {
+       color: orange;
+     }
+
+     .destination {
+       position: relative;
+       left: 130%;
+     }
+
+     .quote1 {
+       position: absolute;
+       left: 60px;
+     }
+
+    .booking {
+      position: absolute;
+      top: 2750px;
+      left: 30%;
+    }
+
+    .explore {
+      position: absolute;
+      top: 2470px;
+      left: 40%;
+      font-size: 30px;
+    }
+
+    .quote {
+      position: relative;
+      bottom: 320px;
+     font-family: 'Times New Roman', Times, serif;
+
+     color: black;
+     width: 40%;
+      padding: 12px 20px;
+      left: 200px;
+      font-size: 70px;
+    }
+
+    .title {
+      position: absolute;
+      top: 20px;
+      left: 100px;
+      font-family: sans-serif;
+      font-size: 30px;
+    }
+
+    section {
+      position: absolute;
+      bottom: 100px;
+    }
+
+    .title1 {
+      position: absolute;
+      top: 20px;
+      left: 765px;
+      font-family: sans-serif;
+      font-size: 30px;
+    }
+
+    .title2 {
+      position: absolute;
+      top: 20px;
+      left: 1380px;
+      font-family: sans-serif;
+      font-size: 30px;
+    }
+    .title3 {
+      position: absolute;
+      top: 300px;
+      right: 1190px;
+      font-family: sans-serif;
+      font-size: 30px;
+    }
+    .title4 {
+      position: absolute;
+      bottom: 410px;
+      left: 875px;
+      font-family: sans-serif;
+      font-size: 30px;
+    }
+    .title5 {
+      position: absolute;
+      bottom: 410px;
+      left: 825%;
+      font-family: sans-serif;
+      font-size: 30px;
+    }
+  
+    body {
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      margin: o;
+      padding: 0%;
+      font-family: sans-serif;
+      }
+
+      input {
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        border-bottom-style: hidden;
+        font-size: 20px;
+      text-transform: uppercase;
+      transition: 0.5s;
+      height: 30px;
+      width: 120px;
+      cursor: pointer;
+      }
+      .feature-img img {
+        width: 200%;
+        position: absolute;
+        top: 85px;
+        left: 100px;
+      }
+      .feature-img1 img {
+        width: 200%;
+        position: absolute;
+        left: 360%;
+        top: 90px;
+      }
+      .feature-img2 img {
+        width: 200%;
+        position: absolute;
+        left: 650%;
+        top: 90px;
+      }
+      .feature-img3 img {
+        width: 230%;
+        height: 117%;
+        position: absolute;
+        right: 450%;
+        top: 360px;
+      }
+      .feature-img4 img {
+        width: 230%;
+        position: absolute;
+        left: 480%;
+        bottom: 100px;
+
+      }
+      .feature-img5 img {
+        width: 230%;
+        position: absolute;
+        left: 825%;
+        bottom: 100px;
+      }
+      
+      .price1 {
+        position: inherit;
+        font-size: 30px;
+        left: 410%;
+        top: 280px;
+      }
+      .price2 {
+        position: inherit;
+        font-size: 30px;
+        left: 750%;
+        top: 190px;
+      }
+      .price3 {
+        position: inherit;
+        font-size: 30px;
+        right: 580%;
+        top: 680px;
+      }
+      .price4 {
+        position: inherit;
+        font-size: 30px;
+        left: 480%;
+        bottom: -80px;
+      }
+      .price5 {
+        position: inherit;
+        font-size: 30px;
+        left: 825%;
+        bottom: 10px;
+      }
+      .price{
+        position: inherit;
+        font-size: 30px;
+        top: 365px;
+        left: 85px;
+      }
+      .book {
+        position: inherit;
+        bottom: 140px;
+        left: -230px;
+      }
+      .book1 {
+        position: inherit;
+        bottom: 140px;
+        left: -230px;
+      }
+      .book2 {
+        position: inherit;
+        bottom: 140px;
+        left: -230px;
+      }
+      .book3 {
+        position: inherit;
+        bottom: -500px;
+        right: 700%;
+      }
+      .book4 {
+        position: inherit;
+        bottom: 80px;
+        left: 360%;
+      }
+      .book5 {
+        position: inherit;
+        bottom: 180px;
+        left: 710%;
+      }
+
+    img {
+      background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+      background-position: center;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+    .container {
+      background: white;
+      border-radius: 20px;
+      position: absolute;
+      bottom: 200px;
+      right: 40%;
+      height: 300px;
+      width: 500px;
+      margin: 100px 450px;
+    }
+
+    .home-btn {
+      position: absolute;
+      text-align: right;
+      top: -60px;
+      left: 30%;
+      font-size: 20px;
+    }
+    .logout-btn {
+
+     position: absolute;
+      text-align: right;
+      top: -60px;
+      left: 75%;
+      font-size: 20px;
+    }
+    .aboutus-btn {
+      position: absolute;
+      text-align: right;
+      top: -60px;
+      left: 45%;
+      font-size: 20px;
+    }
+    .review-btn {
+      position: absolute;
+      text-align: right;
+      width: auto;
+      top: -60px;
+      left: 60%;
+      font-size: 20px;
+    }
+    .button{background-color: #4d5dfb;
+     background-image: linear-gradient(315deg, #4d5dfb 0%, #08c8f6 74%);}
+
+     .button1{background-color: #4d5dfb;
+     background-image: linear-gradient(315deg, #4d5dfb 0%, #08c8f6 74%);}
+
+    .button {
+          position: absolute;
+          top: 160px;
+          left: 220px;
+          width: 240px;
+          padding: 15px 45px;
+          text-align: center;
+          transition: 0.5s;
+          background-size: 200% auto;
+          color: white;            
+          box-shadow: 0 0 20px #eee;
+          border-radius: 10px;
+          display: block;
+    }
+    .button1 {
+          position: absolute;
+          top: -170px;
+          left: 140px;
+          font-size: 40px;
+          width: 600px;
+          padding: 15px 45px;
+          text-align: center;
+          transition: 0.5s;
+          background-size: 200% auto;
+          color: white;            
+          box-shadow: 0 0 20px #eee;
+          border-radius: 10px;
+          display: block;
+    }
+
+    .button:hover {
+      background-position: right center; /* change the direction of the change here */
+      color: #fff;
+      text-decoration: none;
+    }
+    .button1:hover {
+      background-position: right center; /* change the direction of the change here */
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .home-btn {cursor: default;}
+    .aboutus-btn {cursor: pointer;}
+    .review-btn {cursor: default;}
+    .logout-btn {cursor: pointer;}
+
+  </style>
+</body>
+</html>
