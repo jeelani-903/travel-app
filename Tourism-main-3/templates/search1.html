@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src={{url_for('static', filename = 'js/search.js')}}></script>
+</head>
+<body>
+    <img src={{url_for('static', filename = 'images/trip4.png')}} > 
+        <h1>
+            Tripoco
+      </h1>
+      <div class="home-btn">
+        <p>
+          <a class="button" href="/home" type="hidden">HOME</a>
+        </p>
+    </div>
+    <div class="aboutus-btn">
+      <p>
+        <a class="button" href="/about" type="hidden">ABOUT US</a>
+      </p>
+    </div>
+    <div class="review-btn">
+    <p>
+      <a class="button" href="/review" type="hidden">FEEDBACK</a>
+    </p>
+    </div>
+    <div class="logout-btn">
+      <p>
+        <a class="button" href="/" type="hidden">LOGOUT</a>
+      </p>
+      <form class="form" method="post" action="{{ url_for('shortenurl') }}">
+        <div class="container">
+          <div class="forms-1">
+              <label for="from">FROM</label>
+              <input class="dropdown" placeholder="Enter a city" method="POST"  name="fname"  type="text" id="place-from" >
+          <div class="forms-2">
+              <label for="TO">TO</label>
+              <input type="text" placeholder="Enter a city" name="tname" action="{{ url_for('shortenurl') }}" id="place-to" >
+          </div>
+              <div class="date">
+                 <label for="DATE">DATE</label>
+                 <div class="button1">
+                  <button class="button" type="hidden">Search</button>
+                 </div>
+                 <input type="date" id="start" name="trip-start"
+                  value="2021-08-25"
+                  min="2021-01-01" max="2022-12-31">
+              </div>
+          </div>
+      </div>
+    </form>
+  
+      </div>
+        </div>
+
+    </div>
+      </div>
+      <style>
+          .forms-1 {
+              text-align: initial;
+          }
+           .forms-2 {
+               text-align: initial;
+            position: relative;
+            left: 300px;
+            top: -46px;
+            height: 30px;
+            font-size: 20px;
+           }
+           input{
+               height: 40px;
+               width: 200px;
+               font-size: 20px;
+           }
+           
+           .container {
+            padding: 15px;
+            background: #360033; /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #0b8793, #360033); /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            position: absolute;
+            top: 130px;
+            right: -300px;
+            width: 1900px;
+            height: 200px;
+
+        }
+        .button1 {
+            position: absolute;
+            top: 140px;
+        }
+        .date {
+           position: relative;
+           bottom: -30px;
+        }
+          body {
+              font-family: sans-serif;
+          }
+          .home-btn {
+      position: absolute;
+      text-align: right;
+      left: 40%;
+      top: 50px;
+      font-size: 20px;
+    }
+    h1 {
+       padding: 30px;
+       position: absolute;
+       top: 20px;
+       left: 140px;
+       font-family: sans-serif;
+       font-weight: 400;
+       font-size: 40px;
+     }
+     img {
+       padding: 30px;
+     }
+    .logout-btn {
+
+     position: absolute;
+      text-align: right;
+      top: 50px;
+      left: 85%;
+      font-size: 20px;
+    }
+    .aboutus-btn {
+      position: absolute;
+      text-align: right;
+      top: 50px;
+      left: 55%;
+      font-size: 20px;
+    }
+    .review-btn {
+      position: absolute;
+      text-align: right;
+      width: auto;
+      top: 50px;
+      left: 70%;
+      font-size: 20px;
+    }
+
+    .home-btn {cursor: default;}
+    .aboutus-btn {cursor: pointer;}
+    .review-btn {cursor: default;}
+    .logout-btn {cursor: pointer;}
+    .button{background-color: #4d5dfb;
+     background-image: linear-gradient(315deg, #4d5dfb 0%, #08c8f6 74%);}
+
+    .button {
+        font-size: 20px;
+          position: absolute;
+          text-decoration: none;
+          width: 170px;
+          padding: 15px 45px;
+          text-align: center;
+          text-transform: uppercase;
+          transition: 0.5s;
+          background-size: 200% auto;
+          color: white;            
+          box-shadow: 0 0 20px #eee;
+          border-radius: 10px;
+          display: block;
+    }
+
+    .button:hover {
+      background-position: right center; /* change the direction of the change here */
+      color: #fff;
+      text-decoration: none;
+    }
+    label {
+      color: white;
+    }
+    </style>
+</body>
+</html>

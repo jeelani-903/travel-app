@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {font-family: 'Times New Roman', Times, serif;
+background: #360033; /* fallback for old browsers */
+
+ background: -webkit-linear-gradient(to right, #0b8793, #360033); /* Chrome 10-25, Safari 5.1-6 */
+
+ background: linear-gradient(to right, #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+* {box-sizing: border-box;}
+* {font-size: 22px;}
+
+
+  
+input[type=text], select, textarea {
+  width: 100%;
+  position: relative;
+  bottom: 40px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.radio {
+  position: relative;
+  bottom:40px ;
+}
+
+
+
+input[type=submit] {
+  background-color: #982eab;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #b456c4;
+}
+h1 {
+  font-size: 50px;
+  color: whitesmoke;
+}
+h2{
+  font-size: 40px;
+  color: whitesmoke;
+}
+
+.container {
+  height: 160%;
+  border-radius: 5px;
+  /*background: #085078;  /* fallback for old browsers */
+  /*background: -webkit-linear-gradient(to right, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
+  /*background: linear-gradient(to right, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 20px;
+}
+label{
+  position: relative;
+  bottom: 40px;
+  font-size: 30px;
+  color: white;
+}
+
+ .a{
+  background-color: #a52790;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .box {
+    position: relative;
+    left: 30px;
+    
+  }
+  .transperant{
+    position: relative;
+    bottom: 40px;
+  background-color: #a52790;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .datebox {
+    position: relative;
+    bottom: 40px;
+  }
+  .one{
+    position: relative;
+    left: 30px;
+    top: 10px;
+  }
+  .two {
+    position: relative;
+    left: 30px;
+    top: 30px;
+  }
+  .three {
+    position: relative;
+    left: 30px;
+    top: 50px;
+  }
+  .four {
+    position: relative;
+    left: 30px;
+    top: 70px;
+  }
+  .five {
+    position: relative;
+    left: 30px;
+    top: 90px;
+  }
+  .submit {
+    position: absolute;
+    
+    left: 30px;
+    bottom:-350px;
+    
+  }
+  .radio1 {
+    position: relative;
+    font-size: 30px;
+    bottom: 40px;
+    color: white;
+  }
+
+.submit{background-color: #a52790;}
+
+.head {
+  position: relative;
+  top: 10px;
+  left: 30px;
+}
+.banner {
+  position: relative;
+  top: 10px;
+  left: 30px;
+}
+
+
+</style>
+</head>
+<body>
+<h1 style="text-align:center;">Tripoco </h1>
+<h2 style="text-align:center;">Passenger Details</h2>
+<form  action="/receipt" method="POST" >
+  <label for="number" class="head">Is someone travelling with you?</label>
+    <p class="one" name="one">
+      <button  href="#" class="a">No it's just me!</button><br>
+    </p>
+    <p class="banner" id="banner"></p>
+    <script>
+      function myFunction() {
+        document.getElementById("banner").innerHTML = "Proceed to the next section!";
+      }
+    </script>
+    
+    <p class="two">
+      <a class="a" value="two" href="/two"  name="twomem" type="submit">There is one more person!</a><br>
+    </p>
+    <p class="three">
+      <button class="a" name="three" href="/three" type="hidden">Two more people!</button><br>
+    </p>
+    <p class="four">
+      <button class="a" name="four" href="/four" type="hidden">Three more!</button><br>
+    </p>
+
+    <p class="five">
+      <button class="a" name="five" href="/five" type="hidden">Four more to fly!</button><br><br>
+    </p>
+    </select>
+     <br><br><br><br><br>
+     
+     
+  
+</div>
+
+<div class="container">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="fname" required placeholder="Enter First Name">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lname" required placeholder="Enter Last Name">
+    <label for="birthday">Date of birth</label><br><br>
+    <input required class="datebox" required type="date" id="birthday" name="birthday"><br><br>
+    <label for="fname">E-mail</label>
+    <input type="text" id="email" name="email" required placeholder="Enter E-mail">
+    <label for="fname">Mobile</label>
+    <input type="text" id="mobile" name="mobile" required placeholder="Enter Mobile">
+
+    <p class="radio1">Select your seat preference</p>
+  <input required class="radio" required type="radio" name="seat" value="aisle">
+  <label for="aisle">Aisle</label><br><br>
+  <input required class="radio" required type="radio" name="seat" value="middle">
+  <label for="middle">Middle</label><br><br>
+  <input required class="radio" type="radio" name="seat" value="Window">
+  <label for="window">Window</label><br><br>
+  <!-- <input value="{{price}}" type="text" name="amt"   disabled > -->
+  <input style="width: 10px;" class="box" type="text" value={{price}} name="amt">
+  
+  <button class="transperant" type="submit">Proceed to payment</button>
+
+<br><br><br><br>
+  </form>
+    
+
+</body>
+</html>

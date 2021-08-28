@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction invoice</title>
+</head>
+<body>
+    <h1>
+        Tripoco
+    </h1>
+    <h2>
+        Transaction invoice
+    </h2>
+    <div class="container">
+        <form method="POST" >
+            <h3>
+                Passenger :  {{fname}} {{lname}} <br><br>
+                E-mail : {{email}} <br><br>
+                Mobile : {{mobile}} <br><br>
+                                
+            </h3>
+            <a class="button" href="/terms">Proceed</a>
+        </form>
+        <h4> 
+           Total price : Rs. {{price}}
+        </h4>
+    </div>
+    <style>
+        body {
+            background: #360033; /* fallback for old browsers */
+
+ background: -webkit-linear-gradient(to right, #0b8793, #360033); /* Chrome 10-25, Safari 5.1-6 */
+
+ background: linear-gradient(to right, #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+        .container {
+            position: relative;
+            left: 28%;
+            text-align: center;
+            height: 500px;
+            border-radius: 10px;
+            width: 50%;
+            
+        }
+        h1{
+            position: relative;
+            left: 45%;
+            font-size: 80px;
+            color: white;
+        }
+        h4{
+            position: relative;
+            bottom: 140px;
+            font-size: 40px;
+            color: white;
+        }
+        h2{
+            position: relative;
+            left: 45%;
+            font-size: 30px;
+            color: white;
+        }
+        h3{
+            font-size: 50px;
+            color: white;
+        }
+        .button {
+            background-color: #982eab;
+            color: white;
+            position: relative;
+            top: 100px;
+            font-size: 30px;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    </style>
+</body>
+</html>
